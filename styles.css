@@ -42,38 +42,30 @@ body {
 
 /* About Me Section */
 .about-bg {
-    /* Flowing from soft cream to a very light sage/mint */
-    background: linear-gradient(135deg, #fefae0 0%, #f1f4dc 50%, #e9edc9 100%);
-    padding: 6rem 0;
-    border-bottom: 2px solid #dda15e; 
+    background: radial-gradient(circle at center, #dbe7cf 0%, #f1f6ec 30%, #ffffff 65%, #ffffff 100%);
+    padding: 80px 0;
+    border-bottom: none;
     margin-top: 70px; 
     position: relative;
     overflow: hidden;
 }
 
-.about-bg::before {
-    content: "";
-    position: absolute;
-    top: 0; left: 0; width: 100%; height: 100%;
-    background-image: url("https://www.transparenttextures.com/patterns/cubes.png"); /* Subtle geometric texture */
-    opacity: 0.03;
-    pointer-events: none;
-}
-
 .about-bg h2 {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
-    color: #606c38;
+    color: #283618;
 }
 
 .about-bg h4 {
     font-size: 1.5rem;
     margin-bottom: 2rem;
+    color: #3b4f24; 
 }
 
 .about-bg p {
-    font-size: 1.rem;
+    font-size: 1rem;
     line-height: 1.6;
+    color: #2b3520;
 }
 
 .about-bg img {
