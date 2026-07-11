@@ -565,3 +565,90 @@ footer p:last-of-type {
 .coming-soon-inline {
     border-width: 1px !important; /* Making the dashed line more subtle */
 }
+
+/* ==========================================================================
+   Internship Video Section 
+   ========================================================================== */
+.company-intro-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(40, 54, 24, 0.04);
+    border-left: 4px solid #606c38;
+}
+
+.company-name {
+    color: #283618;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.company-desc {
+    color: #444;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.video-row-scroll {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 15px 5px;
+    width: 100%;
+}
+
+.video-row-scroll::-webkit-scrollbar {
+    display: none; 
+}
+
+.video-grid-card {
+    flex: 0 0 calc(16.666% - 17px);
+    min-width: 185px; 
+    background: #ffffff;
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(40, 54, 24, 0.03);
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s ease;
+    text-align: center;
+}
+
+.video-grid-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(40, 54, 24, 0.12);
+}
+
+.video-responsive {
+    width: 100%;
+    aspect-ratio: 9 / 16;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #1a1a1a;
+}
+
+.video-responsive video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-tag {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #bc6c25;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+
+@media (max-width: 800px) {
+    .video-grid-card { flex: 0 0 calc(33.33% - 14px); } /* 平板端一行露 3 个 */
+}
+@media (max-width: 500px) {
+    .video-grid-card { flex: 0 0 calc(50% - 10px); }    /* 手机端一行露 2 个并允许右滑 */
+}
