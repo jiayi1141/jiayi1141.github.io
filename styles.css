@@ -593,7 +593,7 @@ footer p:last-of-type {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    gap: 20px;
+    gap: 15px;
     overflow-x: auto;
     scroll-behavior: smooth;
     padding: 15px 5px;
@@ -605,14 +605,15 @@ footer p:last-of-type {
 }
 
 .video-grid-card {
-    flex: 0 0 calc(16.666% - 17px);
-    min-width: 185px; 
+    flex: 0 0 auto;
+    width: 155px;
     background: #ffffff;
-    padding: 12px;
+    padding: 10px;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(40, 54, 24, 0.03);
     transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s ease;
     text-align: center;
+    box-sizing: border-box;
 }
 
 .video-grid-card:hover {
@@ -635,9 +636,9 @@ footer p:last-of-type {
 }
 
 .video-tag {
-    display: inline-block;
-    margin-top: 10px;
-    font-size: 0.85rem;
+    display: block;
+    margin-top: 8px;
+    font-size: 0.8rem;
     font-weight: bold;
     color: #bc6c25;
     white-space: nowrap;
@@ -646,9 +647,14 @@ footer p:last-of-type {
     width: 100%;
 }
 
-@media (max-width: 800px) {
-    .video-grid-card { flex: 0 0 calc(33.33% - 14px); } /* 平板端一行露 3 个 */
+@media (max-width: 992px) {
+    .video-grid-card { 
+        width: 165px;
+    }
 }
-@media (max-width: 500px) {
-    .video-grid-card { flex: 0 0 calc(50% - 10px); }    /* 手机端一行露 2 个并允许右滑 */
+
+@media (max-width: 576px) {
+    .video-grid-card { 
+        width: 145px;
+    }
 }
