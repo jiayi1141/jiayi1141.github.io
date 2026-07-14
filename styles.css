@@ -415,9 +415,9 @@ footer p:last-of-type {
 
 /* Styling for the dedicated Work page */
 .work-header {
-    padding: 120px 0 60px;
-    background-color: #dda15e; 
-    color: white;
+    padding: 120px 0 60px; 
+    background: radial-gradient(circle at center, #dbe7cf 0%, #f1f6ec 30%, #ffffff 65%, #ffffff 100%);
+    color: #283618; 
 }
 
 .poster-page-img {
